@@ -15,7 +15,7 @@ public class HelloWorld extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)  
             throws ServletException, IOException {
 		String name = req.getParameter("name");
-        resp.getOutputStream().write("Hello World.".getBytes());
+        resp.getOutputStream().write("This is Hello page.".getBytes());
 		resp.getOutputStream().write(name.getBytes());
     }
 }
