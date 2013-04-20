@@ -14,15 +14,31 @@
         <servlet-class>
             bananafish.worldwar.Login
         </servlet-class>
-        </servlet>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>
+            QueryService
+        </servlet-name>
+        <servlet-class>
+            bananafish.worldwar.QueryService
+        </servlet-class>
+    </servlet>
+    
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
-    
+
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>QueryService</servlet-name>
+        <url-pattern>/Query</url-pattern>
     </servlet-mapping>
 
 </web-app>
