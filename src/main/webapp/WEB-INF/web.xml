@@ -34,6 +34,14 @@
         <servlet-name>OnlineCounter</servlet-name>
         <servlet-class>bananafish.worldwar.OnlineCounterService</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginService</servlet-name>
+        <servlet-class>bananafish.worldwar.LoginService</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeService</servlet-name>
+        <servlet-class>bananafish.worldwar.HomeService</servlet-class>
+    </servlet>
 
     <filter>
         <filter-name>CommentFilter</filter-name>
@@ -74,6 +82,15 @@
         <url-pattern>/Comment</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>LoginService</servlet-name>
+        <url-pattern>/LoginService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HomeService</servlet-name>
+        <url-pattern>/HomeService</url-pattern>
+    </servlet-mapping>
     <filter-mapping>
         <filter-name>CommentFilter</filter-name>
         <url-pattern>/Comment</url-pattern>
