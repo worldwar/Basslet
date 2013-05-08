@@ -10,7 +10,7 @@
 <body style="height: 100%">
 <div style="position: relative;top:50%;text-align: center">
 
-<h1>Hello!<%= session.getAttribute("username")%></h1>
+<h1>Good Morning, <%= request.getAttribute("username")%>!</h1>
 </div>
 </body>
 </html>

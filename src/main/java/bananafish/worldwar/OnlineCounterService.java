@@ -16,7 +16,7 @@ import java.io.PrintWriter;
  */
 public class OnlineCounterService extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		HttpSession session = request.getSession();
+//		HttpSession session = request.getSession();
 		int count = OnlineCounter.count();
 		System.out.println("online message.");
 		String countInfo = "Current Online Count : " + String.valueOf(count);

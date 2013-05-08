@@ -16,6 +16,7 @@ public class HelloWorld extends HttpServlet {
             throws ServletException, IOException {
 		String name = req.getParameter("name");
         resp.getOutputStream().write("This is Hello page.".getBytes());
-		resp.getOutputStream().write(name.getBytes());
+		byte[] bytes = name.getBytes();
+		resp.getOutputStream().write(bytes);
     }
 }

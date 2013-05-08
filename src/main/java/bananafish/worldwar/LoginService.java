@@ -24,8 +24,9 @@ public class LoginService extends HttpServlet {
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		if(verifyLogin(username, password)){
-	//		resp.sendRedirect("HomeService");
-			req.getSession().setAttribute("username", username);
+//			getServletContext().setAttribute("username", username);
+//			resp.sendRedirect("HomeService");
+//			req.getSession().setAttribute("username", username);
 			req.getRequestDispatcher("home.jsp").forward(req, resp);
 		}
 		else {
